@@ -6,5 +6,116 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e3caca;
+  color: #fff;
+}
+
+.App {
+  background-color: rgb(252,81,147);
+  height: auto;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h3 {
+  margin-left: 5px;
+}
+
+.header p {
+  flex: 1;
+  text-align: center;
+}
+
+.header svg:nth-of-type(3) {
+  margin-left: 3%;
+ 
+}
+
+.home1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 20vh;
+  font-weight: 600;
+  align-items: center;
+}
+
+.home2 {
+  background-color: rgb(223,71,131);
+}
+
+.home3 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 25vh);
+  font-weight: 600;
+  align-items: center;
+}
+
+.home3 a {
+  text-decoration: none;
+  height: 100%;
+}
+
+.home3>a>button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: rgb(223,71,131);
+  color: #fff;
+}
+
+.home3>a>button>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.5rem;
+  width: 50%;
+  height: 100%;
+}
+
+.home3>a>button>div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: end;
+  width: 50%;
+  height: 100%;
+}
+
+.home3>a:nth-of-type(2)>button,
+.home3>a:nth-of-type(3)>button,
+.home3>a:nth-of-type(6)>button,
+.home3>a:nth-of-type(7)>button {
+  background-color: rgb(209,66,121);
+}
+
+.home4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 10vh);
+}
+
+.home5 {
+  display: flex;
+}
+
+.home5>h3 {
+  flex: 1;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.home5:nth-of-type(even) {
+  background-color: rgb(209,66,121);
 }
