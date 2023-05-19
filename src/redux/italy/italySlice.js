@@ -67,6 +67,8 @@ const italySlice = createSlice({
   initialState,
   reducers: {
     setCountry: (state, { payload }) => {
+      state.data1 = [];
+      state.data2 = [];
       const [country, countryPollution] = payload;
       state.country = country;
       state.countryPollution = { ...countryPollution };
@@ -116,13 +118,3 @@ const italySlice = createSlice({
 export const { setCountry } = italySlice.actions;
 
 export default italySlice.reducer;
-
-/**
- * const latlong = [
-  { lat: 45.4641943, lng: 9.1896346 },
-  { lat: 45.4371908, lng: 12.3345898 },
-  { lat: 44.4938203, lng: 11.3426327 },
-  { lat: 43.7698712, lng: 11.2555757 },
-  { lat: 38.1112268, lng: 13.3524434 },
-];
- */

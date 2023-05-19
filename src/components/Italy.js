@@ -10,13 +10,16 @@ const Italy = () => {
   } = useSelector((store) => store.italy);
 
   const { co, no, pollution } = countryPollution || [];
+
   useEffect(() => {
     if (data1.length > 0) {
       dispatch(fetchItalyData(data1));
-    } else {
-      dispatch(fetchItalyLatLong());
     }
-  }, [dispatch, data1]);
+    // console.log(country);
+    // dispatch(fetchItalyLatLong(country));
+
+    dispatch(fetchItalyLatLong(country));
+  }, [dispatch, data1, country]);
 
   // console.log(data2, cities);
 

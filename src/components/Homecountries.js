@@ -9,7 +9,6 @@ import { setCountry } from '../redux/italy/italySlice';
 const Homecountries = ({ country, data }) => {
   const dispatch = useDispatch();
   const { co, no, pollution } = data || {};
-  // console.log(data);
   const sent = [country, data];
 
   return (

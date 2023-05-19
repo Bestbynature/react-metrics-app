@@ -72,6 +72,7 @@ const homeSlice = createSlice({
       .addCase(fetchHomeLatLong.fulfilled, (state, { payload }) => {
         state.loading = false;
         const output = [];
+        // console.log(payload);
         payload.forEach((item) => {
           const latlong = { lat: item[0].lat, lng: item[0].lon };
           output.push(latlong);
