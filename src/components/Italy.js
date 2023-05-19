@@ -1,27 +1,20 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchItalyData, fetchItalyLatLong, cities } from '../redux/italy/italySlice';
+import { fetchItalyLatLong, citiesall } from '../redux/italy/italySlice';
 
 const Italy = () => {
   const dispatch = useDispatch();
 
-  const {
-    data1, data2, country, countryPollution,
-  } = useSelector((store) => store.italy);
+  const { citydata, country, countryPollution } = useSelector((store) => store.italy);
+
+  const loaded = country.toLowerCase().replace(/ /g, '');
+  const cities = citiesall[loaded];
 
   const { co, no, pollution } = countryPollution || [];
 
   useEffect(() => {
-    if (data1.length > 0) {
-      dispatch(fetchItalyData(data1));
-    }
-    // console.log(country);
-    // dispatch(fetchItalyLatLong(country));
-
     dispatch(fetchItalyLatLong(country));
-  }, [dispatch, data1, country]);
-
-  // console.log(data2, cities);
+  }, []);
 
   return (
     <>
@@ -46,7 +39,7 @@ const Italy = () => {
       </div>
       <div className="home4">
         {cities.map((city, i) => {
-          const data = data2[i];
+          const data = citydata[i];
           const { co } = data || {};
           return (
             <div className="home5" key={city}>
