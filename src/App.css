@@ -10,7 +10,7 @@ body {
 }
 
 .App {
-  background-color: rgb(252,81,147);
+  background-color: rgb(252, 81, 147);
   height: auto;
   max-width: 375px;
   margin: 0 auto;
@@ -33,7 +33,6 @@ body {
 
 .header svg:nth-of-type(3) {
   margin-left: 3%;
- 
 }
 
 .home1 {
@@ -45,7 +44,7 @@ body {
 }
 
 .home2 {
-  background-color: rgb(223,71,131);
+  background-color: rgb(223, 71, 131);
 }
 
 .home3 {
@@ -61,18 +60,18 @@ body {
   height: 100%;
 }
 
-.home3>a>button {
+.home3 > a > button {
   border: none;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem 2rem 1rem;
-  background-color: rgb(223,71,131);
+  background-color: rgb(223, 71, 131);
   color: #fff;
 }
 
-.home3>a>button>div:nth-child(1) {
+.home3 > a > button > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,7 +81,7 @@ body {
   height: 100%;
 }
 
-.home3>a>button>div:nth-child(2){
+.home3 > a > button > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,11 +91,11 @@ body {
   height: 100%;
 }
 
-.home3>a:nth-of-type(2)>button,
-.home3>a:nth-of-type(3)>button,
-.home3>a:nth-of-type(6)>button,
-.home3>a:nth-of-type(7)>button {
-  background-color: rgb(209,66,121);
+.home3 > a:nth-of-type(2) > button,
+.home3 > a:nth-of-type(3) > button,
+.home3 > a:nth-of-type(6) > button,
+.home3 > a:nth-of-type(7) > button {
+  background-color: rgb(209, 66, 121);
 }
 
 .home4 {
@@ -109,7 +108,7 @@ body {
   display: flex;
 }
 
-.home5>h3 {
+.home5 > h3 {
   flex: 1;
   padding: 1rem;
   font-weight: 300;
@@ -117,5 +116,5 @@ body {
 }
 
 .home5:nth-of-type(even) {
-  background-color: rgb(209,66,121);
+  background-color: rgb(209, 66, 121);
 }
