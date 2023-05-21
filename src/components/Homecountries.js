@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { BsArrowRightCircle as Arr } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setCountry } from '../redux/italy/italySlice';
+import { setCountry } from '../redux/details/detailsSlice';
 
 const Homecountries = ({ country, load }) => {
   const dispatch = useDispatch();

@@ -19,7 +19,7 @@ const Home = () => {
         <div className="continent">MEMBER NATIONS</div>
       </div>
       <div className="home2">
-        STATS BY COUNTRY
+        <p>STATS BY COUNTRY</p>
       </div>
       <div className="home3">
         {countries.map((country, i) => {

@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import italyReducer from './italy/italySlice';
+import detailsReducer from './details/detailsSlice';
 import homeReducer from './home/homeSlice';
 
 const store = configureStore({
   reducer: {
-    italy: italyReducer,
+    details: detailsReducer,
     home: homeReducer,
   },
 });

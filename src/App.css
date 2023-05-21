@@ -19,11 +19,22 @@ body {
 .header {
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.header > div {
+  background-color: rgb(252, 81, 147);
+  cursor: pointer;
+}
+
+.header > div:hover {
+  filter: invert(100%);
+}
+
 .header h3 {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .header p {
@@ -31,8 +42,15 @@ body {
   text-align: center;
 }
 
-.header svg:nth-of-type(3) {
-  margin-left: 3%;
+.header > svg:nth-of-type(2),
+.header > svg:nth-of-type(1) {
+  margin-left: 5%;
+}
+
+.header svg:nth-of-type(1):hover,
+.header svg:nth-of-type(2):hover {
+  filter: invert(100%);
+  border-color: #fff;
 }
 
 .home1 {
@@ -41,10 +59,17 @@ body {
   height: 20vh;
   font-weight: 600;
   align-items: center;
+  padding: 0 1rem 0 1rem;
 }
 
 .home2 {
   background-color: rgb(223, 71, 131);
+}
+
+.home2 > p {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .home3 {
@@ -113,6 +138,7 @@ body {
   display: flex;
   height: auto;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .home5 > h3 {
@@ -145,6 +171,28 @@ body {
   justify-content: center;
   align-items: center;
   height: auto;
+}
+
+.second {
+  text-align: end;
+}
+
+.first {
+  font-weight: 200;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.notfound {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .home5 > div > img {
