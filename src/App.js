@@ -20,7 +20,7 @@ function App() {
         <Route path="/country/ghana" element={<Italy />} />
         <Route path="/country/spain" element={<Italy />} />
         <Route path="/country/united kingdom" element={<Italy />} />
-        <Route path="/country/czeck republic" element={<Italy />} />
+        <Route path="/country/bolivia" element={<Italy />} />
       </Routes>
     </div>
   );

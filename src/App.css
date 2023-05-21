@@ -69,6 +69,7 @@ body {
   padding: 1rem 1rem 2rem 1rem;
   background-color: rgb(223, 71, 131);
   color: #fff;
+  cursor: pointer;
 }
 
 .home3 > a > button > div:nth-child(1) {
@@ -79,6 +80,10 @@ body {
   font-size: 0.5rem;
   width: 50%;
   height: 100%;
+}
+
+.home3 > a > button > div:nth-child(1) > img {
+  width: 50%;
 }
 
 .home3 > a > button > div:nth-child(2) {
@@ -106,15 +111,42 @@ body {
 
 .home5 {
   display: flex;
+  height: auto;
+  align-items: center;
 }
 
 .home5 > h3 {
-  flex: 1;
   padding: 1rem;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  flex-basis: 60%;
+}
+
+.home5 > h3 > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home5 > h3 > a:hover {
+  text-decoration: underline;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  filter: invert(100%);
 }
 
 .home5:nth-of-type(even) {
   background-color: rgb(209, 66, 121);
+}
+
+.home5 > div {
+ flex-basis: 40%;
+ padding: 2rem;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.home5 > div > img {
+  width: 50%;
 }

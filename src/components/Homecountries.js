@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setCountry } from '../redux/italy/italySlice';
 
-const Homecountries = ({ country, data }) => {
+const Homecountries = ({ country, load }) => {
   const dispatch = useDispatch();
-  const { co, no, pollution } = data || {};
-  const sent = [country, data];
+  const { Area, Capital, Population } = load || {};
+  const sent = [country, load];
 
   return (
     <Link to={`/country/${country.toLowerCase()}`}>
@@ -20,17 +20,18 @@ const Homecountries = ({ country, data }) => {
       >
         <div>
           <p>
-            CO level:
-            {co}
+            Area:&nbsp;
+            {Area}
           </p>
           <p>
-            NO level:
-            {no}
+            Capital:&nbsp;
+            {Capital}
           </p>
           <p>
-            Pollution level:
-            {pollution}
+            Population:&nbsp;
+            {Population}
           </p>
+          <img src={load['Official Flag']} alt="Official Flag" />
         </div>
         <div>
           <Arr />
@@ -42,12 +43,12 @@ const Homecountries = ({ country, data }) => {
 };
 
 Homecountries.propTypes = {
-  data: PropTypes.instanceOf(Object),
+  load: PropTypes.instanceOf(Object),
   country: PropTypes.string.isRequired,
 };
 
 Homecountries.defaultProps = {
-  data: [],
+  load: {},
 };
 
 export default Homecountries;
