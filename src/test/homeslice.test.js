@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import axios from 'axios';
-import { fetchHomeData } from '../redux/home/homeslice';
+import { fetchHomeData } from '../redux/home/homeSlice';
 
 jest.mock('axios');
 
