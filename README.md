@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[React Pollution Metrics App\] ](#-React Pollution Metrics App-)
+- [📖 React Pollution Metrics App](#-about-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -29,7 +29,7 @@
 
 # 📖 [React Pollution Metrics App] <a name="about-project"></a>
 
-**[React Pollution Metrics App](https://react-metrics-app.onrender.com/)** is built with react using create-react-app. It essentially displays a list of countries and few other details about each country and allows users to view more details about each country. Other pages are also accessible with routers.
+**[React Pollution Metrics App](https://metric-web-application.onrender.com/)** is built with react using create-react-app. It essentially displays a list of countries and few other details about each country and allows users to view more details about each country. Other pages are also accessible with routers.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### **[React Pollution Metrics App](https://react-metrics-app.onrender.com/)**
+### **[React Pollution Metrics App](https://metric-web-application.onrender.com/)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
