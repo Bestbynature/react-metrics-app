@@ -1,6 +1,6 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-  * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -29,6 +29,15 @@ body {
 .header > div {
   background-color: rgb(252, 81, 147);
   cursor: pointer;
+}
+
+.home5 > div {
+  flex-basis: 40%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .header > div:hover {
@@ -67,7 +76,6 @@ body {
   background-color: rgba(223, 71, 131, 0.7);
   width: 100%;
   height: 100%;
-
 }
 
 .home1 {
@@ -122,6 +130,10 @@ body {
   font-size: 0.5rem;
   width: 50%;
   height: 100%;
+}
+
+.home5 > div > img {
+  width: 50%;
 }
 
 .home3 > a > button > div:nth-child(1) > img {
@@ -179,15 +191,6 @@ body {
   background-color: rgb(209, 66, 121);
 }
 
-.home5 > div {
- flex-basis: 40%;
- padding: 2rem;
- display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
 .second {
   text-align: end;
 }
@@ -198,7 +201,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 
 .notfound {
@@ -208,8 +210,4 @@ body {
   text-align: center;
   gap: 2rem;
   margin-top: 2rem;
-}
-
-.home5 > div > img {
-  width: 50%;
 }

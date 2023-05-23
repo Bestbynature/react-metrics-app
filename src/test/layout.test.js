@@ -36,7 +36,6 @@ describe('Header', () => {
     expect(screen.getByTestId('back-button')).toBeInTheDocument();
     expect(screen.getByText('First Title')).toBeInTheDocument();
     expect(screen.getByText('Second Title')).toBeInTheDocument();
-
   });
 
   it('calls the backHandler function when the back button is clicked', () => {
