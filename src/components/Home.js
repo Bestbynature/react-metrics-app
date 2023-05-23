@@ -10,7 +10,7 @@ const Home = () => {
   const { data } = useSelector((store) => store.home);
   useEffect(() => {
     dispatch(fetchHomeData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
