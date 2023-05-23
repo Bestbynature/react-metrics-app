@@ -1,10 +1,21 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Details from './components/Details';
 import Notfound from './components/Notfound';
+import { countries } from './redux/home/homeSlice';
 import './App.css';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
@@ -12,17 +23,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/country/italy" element={<Details />} />
-          <Route path="/country/germany" element={<Details />} />
-          <Route path="/country/poland" element={<Details />} />
-          <Route path="/country/nigeria" element={<Details />} />
-          <Route path="/country/ghana" element={<Details />} />
-          <Route path="/country/spain" element={<Details />} />
-          <Route path="/country/united kingdom" element={<Details />} />
-          <Route path="/country/bolivia" element={<Details />} />
+          {countries.map((item) => (
+            <Route key={item} path={`/country/${item}`} element={<Details />} />
+          ))}
           <Route path="*" element={<Notfound />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </div>
   );
 }

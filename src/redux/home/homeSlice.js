@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, isRejectedWithValue } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-export const countries = ['BOLIVIA', 'ITALY', 'GERMANY', 'POLAND', 'SPAIN', 'UNITED KINGDOM', 'NIGERIA', 'GHANA'];
+export const countries = ['BOLIVIA', 'ITALY', 'GERMANY', 'POLAND', 'SPAIN', 'UNITED KINGDOM', 'NIGERIA', 'GHANA', 'CAMEROON', 'TUNISIA', 'ISRAEL', 'CANADA', 'CONGO', 'KENYA', 'MALI', 'SENEGAL', 'SOUTH AFRICA', 'EGYPT', 'SUDAN', 'ETHIOPIA', 'CHINA', 'INDIA', 'ARGENTINA', 'CHILE', 'PERU', 'MEXICO', 'HAITI', 'SOUTH KOREA', 'BRAZIL', 'COSTA RICA', 'PANAMA', 'COLOMBIA', 'VENEZUELA', 'ECUADOR', 'PARAGUAY', 'URUGUAY'];
 
 const generateUrl = (arr) => {
   const result = [];

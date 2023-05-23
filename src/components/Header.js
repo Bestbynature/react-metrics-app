@@ -22,11 +22,11 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div><Larr onClick={backHandler} /></div>
+      <div><Larr onClick={backHandler} data-testid="back-button" /></div>
       <h3>{first}</h3>
       <p>{second}</p>
-      <Mic />
-      <Gear />
+      <Mic data-testid="mirophone-icon" />
+      <Gear data-testid="gear-icon" />
 
     </div>
   );

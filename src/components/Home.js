@@ -14,8 +14,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="home1">
-        <div className="continent">&nbsp;</div>
+      <div className="home1" data-testid="home">
+        <div className="home-logo">
+          <div className="filter">&nbsp;</div>
+        </div>
         <div className="continent">MEMBER NATIONS</div>
       </div>
       <div className="home2">

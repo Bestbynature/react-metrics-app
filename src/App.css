@@ -1,11 +1,13 @@
-* {
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+  * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #fff;
 }
 
@@ -13,7 +15,7 @@ body {
   background-color: rgb(252, 81, 147);
   height: auto;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .header {
@@ -53,6 +55,21 @@ body {
   border-color: #fff;
 }
 
+.home-logo {
+  background-image: url('./assets/un-logo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.filter {
+  background-color: rgba(223, 71, 131, 0.7);
+  width: 100%;
+  height: 100%;
+
+}
+
 .home1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -75,7 +92,7 @@ body {
 .home3 {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(4, 25vh);
+  grid-auto-rows: 25vh;
   font-weight: 600;
   align-items: center;
 }
@@ -121,10 +138,8 @@ body {
   height: 100%;
 }
 
-.home3 > a:nth-of-type(2) > button,
-.home3 > a:nth-of-type(3) > button,
-.home3 > a:nth-of-type(6) > button,
-.home3 > a:nth-of-type(7) > button {
+.home3 > a:nth-of-type(4n-2) > button,
+.home3 > a:nth-of-type(4n-1) > button {
   background-color: rgb(209, 66, 121);
 }
 

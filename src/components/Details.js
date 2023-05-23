@@ -14,7 +14,7 @@ const Details = () => {
 
   return (
     <>
-      <div className="home1">
+      <div className="home1" data-testid="details">
         <div className="first">
           <p>
             Area is &nbsp;
@@ -60,7 +60,7 @@ const Details = () => {
             return (
               <div className="home5" key={v4()}>
                 <h3>{property}</h3>
-                <div><img src={value} alt={property} /></div>
+                <div><img src={value} alt={property} title={property} /></div>
                 <Arr />
               </div>
             );

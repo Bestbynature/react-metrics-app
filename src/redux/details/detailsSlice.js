@@ -4,8 +4,8 @@ const initialState = {
   country: '',
   countryData: JSON.parse(localStorage.getItem('country')) || {},
   header: {
-    first: '2015',
-    second: 'most views',
+    first: '2023',
+    second: 'Brief Overview',
   },
 };
 
@@ -26,8 +26,8 @@ const detailsSlice = createSlice({
     },
     setHeader: (state) => {
       const newVal = {
-        first: '2015',
-        second: 'most views',
+        first: '2023',
+        second: 'Brief Overview',
       };
       state.header = { ...newVal };
     },
