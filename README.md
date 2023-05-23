@@ -31,6 +31,9 @@
 
 **[React Pollution Metrics App](https://metric-web-application.onrender.com/)** is built with react using create-react-app. It essentially displays a list of countries and few other details about each country and allows users to view more details about each country. Other pages are also accessible with routers.
 
+## Project Documentation
+[Link to the video explaining the features](https://www.loom.com/share/d6a6f003429d4281a21b38f18cc29c44)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
