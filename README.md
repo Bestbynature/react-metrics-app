@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### **[React Pollution Metrics App](https://64ff465bef58142b23a46ce0--cheerful-pixie-0fc474.netlify.app/)**
+### **[React Pollution Metrics App](https://world-metrics.netlify.app/)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
